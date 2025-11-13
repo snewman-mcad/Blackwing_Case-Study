@@ -2,6 +2,18 @@
     font-family: OpenSans-Regular;
     src: url(fonts/Open_Sans/static/OpenSans-Regular.ttf);
 }
+@font-face {
+    font-family: Lato-Black;
+    src: url(fonts/Lato/Lato-Black.ttf);
+}
+@font-face {
+    font-family: OpenSans-Bold;
+    src: url(fonts/Open_Sans/static/OpenSans-Bold.ttf);
+}
+@font-face {
+    font-family: OpenSans-SemiBold;
+    src: url(fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
+}
 
 *,
 *:before,
@@ -14,6 +26,9 @@
 :root {
     /*Fonts*/
     --font-regular: OpenSans-Regular, sans-serif;
+    --font-bold: OpenSans-Bold, sans-serif;
+    --font-semibold: OpenSans-SemiBold, sans-serif;
+    --font-black: Lato-Black, sans-serif;
     /*Colors*/
     --Black: #000;
     --DarkGrey: #232323;
@@ -23,8 +38,51 @@
     --LightestGrey: #F6F6F6;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
 
+/*Typography Defaults*/
 body {
     font-family: var(--font-regular), sans-serif;
     color: var(--DarkGrey);
+}
+h1 {
+    font-family: var(--font-black);
+    text-transform: uppercase;
+    color: var(--Black);
+    font-size: 1.7rem;
+}
+h2 {
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+}
+h3 {
+    font-family: var(--font-semibold);
+}
+.h2-home {
+    font-family: var(--font-bold);
+    text-transform: none;
+    font-size: 1.3rem;
+}
+.h3-home {
+    font-family: var(--font-bold);
+    font-size: 1rem;
+}
+p {
+    line-height: 1.3rem;
+}
+
+/*Components*/
+.component img {
+    max-width: initial;
+}
+.component__img {
+    border: 1px solid var(--DarkGrey);
+    overflow-x: auto;
+}
+.component__code {
+    border: 1px solid var(--DarkGrey);
+    margin-top: 0.5rem;
 }
