@@ -1,0 +1,30 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+
+}
+
+/*Variables*/
+:root {
+    /*Fonts*/
+    --font-regular: OpenSans-Regular, sans-serif;
+    /*Colors*/
+    --Black: #000;
+    --DarkGrey: #232323;
+    --MidGrey: #5D5D5D;
+    --Mid-LightGrey: #9D9D9D;
+    --LightGrey: #ECECEC;
+    --LightestGrey: #F6F6F6;
+}
+
+
+body {
+    font-family: var(--font-regular), sans-serif;
+    color: var(--DarkGrey);
+}
