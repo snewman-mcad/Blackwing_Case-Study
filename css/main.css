@@ -36,6 +36,7 @@
     --Mid-LightGrey: #9D9D9D;
     --LightGrey: #ECECEC;
     --LightestGrey: #F6F6F6;
+    --White: #FFF;
 }
 
 img {
@@ -73,6 +74,35 @@ h3 {
 p {
     line-height: 1.3rem;
 }
+
+
+/*Button Styles*/
+.button {
+    font-family: var(--font-bold);
+    color: var(--LightestGrey);
+    background-color: var(--Black);
+    display: block;
+    padding: 0.75rem 1rem;
+    font-size: 0.75rem;
+    border: none;
+}
+.button--outlined {
+    background-color: var(--White);
+    border: 1px solid var(--Black);
+    color: var(--DarkGrey);
+    text-transform: uppercase;
+    font-family: var(--font-semibold);
+}
+.button--dark-grey {
+    background-color: var(--MidGrey);
+    color: var(--LightestGrey);
+}
+.button--light-grey {
+    background-color: var(--Mid-LightGrey);
+    color: var(--DarkGrey);
+    text-transform: uppercase;
+}
+
 
 /*Components*/
 .component img {
