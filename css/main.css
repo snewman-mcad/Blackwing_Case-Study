@@ -74,6 +74,11 @@ h3 {
 p {
     line-height: 1.3rem;
 }
+.superscript {
+  font-size: x-small;
+  position: relative;
+  top: -1rem;
+}
 
 
 /*Button Styles*/
@@ -101,6 +106,24 @@ p {
     background-color: var(--Mid-LightGrey);
     color: var(--DarkGrey);
     text-transform: uppercase;
+}
+
+
+/*Form Styles*/
+.search-bar {
+    background-color: var(--LightestGrey);
+    border: none;
+    width: 27rem;
+    border-radius: 5px;
+    padding: 0.7rem 1rem;
+    font-size: 0.7rem;
+}
+i {
+    font-size: 1.2rem;
+    color: var(--DarkGrey);
+    position: relative;
+    top: 0.2rem;
+    left: -2.5rem;
 }
 
 
