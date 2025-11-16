@@ -59,7 +59,7 @@ h2 {
     font-family: var(--font-bold);
     text-transform: uppercase;
 }
-h3 {
+h3, h4 {
     font-family: var(--font-semibold);
 }
 .h2-home {
@@ -138,4 +138,31 @@ i {
 .component__code {
     border: 1px solid var(--DarkGrey);
     margin-top: 0.5rem;
+}
+.swatch {
+    display: flex;
+    align-items: center;
+}
+.circle {
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: var(--LightestGrey);
+    border-radius: 50%;
+    border: solid 1px var(--Black);
+    display: block;
+}
+.circle--light {
+    background-color: var(--LightGrey);
+}
+.circle--mid-light {
+    background-color: var(--Mid-LightGrey);
+}
+.circle--mid {
+    background-color: var(--MidGrey);
+}
+.circle--dark {
+    background-color: var(--DarkGrey);
+}
+.circle--black {
+    background-color: var(--Black);
 }
