@@ -90,8 +90,44 @@ ul {
 
 
 /*Header Styles*/
+.logo {
+    margin-left: 0.5rem;
+}
+.main-header {
+    display: grid;
+    grid-template-columns: 13rem 2fr 1fr;
+    align-items: center;
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.header-nav-list {
+    display: flex;
+    font-family: var(--font-bold);
+    font-size: 0.8rem;
+    justify-content: end;
+}
+.header-nav-list li {
+    padding: 0.5rem;
+}
+.header-nav-list i {
+    font-size: 1rem;
+}
 .sub-header {
     background-color: var(--LightGrey);
+}
+.main-nav {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+.main-nav-list {
+    display: flex;
+    margin: 0;
+}
+.main-nav-list li {
+    padding: 0.7rem;
+    font-family: var(--font-bold);
+    text-transform: uppercase;
+    font-size: 0.75rem;
 }
 .offer-area {
     background-color: var(--DarkGrey);
@@ -99,6 +135,10 @@ ul {
     font-size: 0.75rem;
     text-align: center;
 }
+.offer-area p {
+    margin: 0;
+}
+
 
 /*Button Styles*/
 .button {
