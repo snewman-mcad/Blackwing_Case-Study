@@ -79,7 +79,26 @@ p {
   position: relative;
   top: -1rem;
 }
+a {
+    text-decoration: none;
+    color: var(--DarkGrey);
+}
+ul {
+    list-style: none;
+    padding-left: 0;
+}
 
+
+/*Header Styles*/
+.sub-header {
+    background-color: var(--LightGrey);
+}
+.offer-area {
+    background-color: var(--DarkGrey);
+    color: var(--LightestGrey);
+    font-size: 0.75rem;
+    text-align: center;
+}
 
 /*Button Styles*/
 .button {
@@ -118,7 +137,7 @@ p {
     padding: 0.7rem 1rem;
     font-size: 0.7rem;
 }
-i {
+.search-bar__mag-glass {
     font-size: 1.2rem;
     color: var(--DarkGrey);
     position: relative;
@@ -165,4 +184,9 @@ i {
 }
 .circle--black {
     background-color: var(--Black);
+}
+.white-icon {
+    background-color: var(--DarkGrey);
+    font-size: 1.75rem;
+    border: solid 1px var(--DarkGrey);
 }
