@@ -171,6 +171,44 @@ ul {
 }
 
 
+/*Footer Styles*/
+footer {
+    background-color: var(--DarkGrey);
+    color: var(--Mid-LightGrey);
+    padding: 2rem 2rem 1rem 2rem;
+}
+.footer {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+}
+.footer__section {
+    margin: 0;
+}
+.footer__heading {
+    color: var(--LightestGrey);
+    text-transform: uppercase;
+}
+.footer__section li {
+    margin: 0.7rem 0;
+}
+.footer__section .footer__heading {
+    margin-bottom: 1.5rem;
+}
+.footer--credit-cards {
+    grid-column: 4;
+    text-align: center;
+}
+.email--sign-up {
+    height: 2.5rem;
+    background-color: var(--DarkGrey);
+    border: solid 1px var(--Mid-LightGrey);
+    border-left: none;
+    width: 22rem;
+}
+
+
 /*Button Styles*/
 .button {
     font-family: var(--font-bold);
@@ -263,4 +301,5 @@ ul {
     background-color: var(--DarkGrey);
     font-size: 1.75rem;
     border: solid 1px var(--DarkGrey);
+    margin: 1rem 0.25rem;
 }
