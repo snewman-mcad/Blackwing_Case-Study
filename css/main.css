@@ -84,6 +84,7 @@ p {
 a {
     text-decoration: none;
     color: var(--DarkGrey);
+    display: inline-block;
 }
 ul {
     list-style: none;
@@ -205,15 +206,14 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr) 2fr;
 }
-.footer__section {
-    margin: 0;
-}
-.footer__heading {
+.footer__heading a {
     color: var(--LightestGrey);
     text-transform: uppercase;
 }
-.footer__section li {
-    margin: 0.7rem 0;
+.footer__section .footer__link a {
+    margin: 0.5rem 0;
+    color: var(--Mid-LightGrey);
+    font-size: 0.75rem;
 }
 .footer__section .footer__heading {
     margin-bottom: 1.5rem;
@@ -222,12 +222,21 @@ footer {
     grid-column: 4;
     text-align: center;
 }
+.email-submission {
+    margin: 1rem 0;
+}
 .email--sign-up {
     height: 2.5rem;
     background-color: var(--DarkGrey);
     border: solid 1px var(--Mid-LightGrey);
     border-left: none;
-    width: 22rem;
+    max-width: 22rem;
+    min-width: 18rem;
+}
+.checkbox {
+    background-color: var(--DarkGrey);
+    border: 1px solid var(--LightGrey);
+    accent-color: none;
 }
 
 
