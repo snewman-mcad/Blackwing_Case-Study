@@ -140,12 +140,43 @@ ul {
 }
 
 
+/*Hero Section*/
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.hero__img, .hero__contents{
+    grid-row: 1/2;
+}
+.hero__img {
+    width: 100%;
+    height: auto;
+    grid-column: 1/6;
+}
+.hero__contents {
+    color: var(--DarkGrey);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    max-width: 35rem;
+    text-align: right;
+    align-self: center;
+    grid-column: 4/-1;
+    margin-right: 5rem;
+}
+.hero__contents p {
+    line-height: 2rem;
+}
+.hero-heading {
+    font-size: 2.5rem;
+}
+
+
 /*Button Styles*/
 .button {
     font-family: var(--font-bold);
     color: var(--LightestGrey);
     background-color: var(--Black);
-    display: block;
+    display: inline-block;
     padding: 0.75rem 1rem;
     font-size: 0.75rem;
     border: none;
@@ -165,6 +196,9 @@ ul {
     background-color: var(--Mid-LightGrey);
     color: var(--DarkGrey);
     text-transform: uppercase;
+}
+.button--hero {
+    font-size: 1.25rem;
 }
 
 
