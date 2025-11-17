@@ -66,10 +66,12 @@ h3, h4 {
     font-family: var(--font-bold);
     text-transform: none;
     font-size: 1.3rem;
+    margin-bottom: 2rem;
 }
 .h3-home {
     font-family: var(--font-bold);
     font-size: 1rem;
+    margin-bottom: 1.5rem;
 }
 p {
     line-height: 1.3rem;
@@ -170,6 +172,26 @@ ul {
     font-size: 2.5rem;
 }
 
+/*Featured Styles*/
+.featured__background {
+    background-color: var(--LightGrey);
+}
+.featured {
+    max-width: 75rem;
+    display: grid;
+    grid-template-columns: 2fr repeat(4, 1fr);
+    gap: 1rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+.featured__description {
+    margin-bottom: 2rem;
+}
+.featured__img {
+    max-width: 140px;
+    height: auto;
+}
+
 
 /*Footer Styles*/
 footer {
@@ -259,9 +281,6 @@ footer {
 
 
 /*Components*/
-.component img {
-    max-width: initial;
-}
 .component__img {
     border: 1px solid var(--DarkGrey);
     overflow-x: auto;
