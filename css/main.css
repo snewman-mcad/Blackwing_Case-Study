@@ -302,10 +302,58 @@ footer {
     max-width: 22rem;
     min-width: 18rem;
 }
-.checkbox {
-    background-color: var(--DarkGrey);
-    border: 1px solid var(--LightGrey);
-    accent-color: none;
+.checkbox-input {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    color: var(--LightGrey);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.checkbox-input input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--DarkGrey);
+  border: 1px solid var(--LightGrey);
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.checkbox-input input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.checkbox-input .checkmark:after {
+  left: 7px;
+  top: 2px;
+  width: 8px;
+  height: 15px;
+  border: solid var(--LightGrey);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 
