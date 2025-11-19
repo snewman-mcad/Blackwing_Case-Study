@@ -48,6 +48,9 @@ img {
     max-width: 100%;
     display: block;
 }
+.main-area {
+    margin: 1rem;
+}
 
 /*Typography Defaults*/
 body {
@@ -96,6 +99,16 @@ ul {
     padding-left: 0;
 }
 
+
+/*Component Nav Bar*/
+.flex {
+    display: flex;
+}
+.component__nav {
+    background-color: var(--LightGrey);
+    width: 15rem;
+    padding: 1rem;
+}
 
 /*Header Styles*/
 .logo {
