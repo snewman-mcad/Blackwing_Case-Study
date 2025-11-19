@@ -203,13 +203,19 @@ ul {
     font-family: var(--font-bold);
     margin-bottom: 0.75rem;
 }
-.hero__img, .product__contents{
+.hero__img, .product__contents, .transparent-block {
     grid-row: 1/2;
 }
 .product__contents {
     text-align: left;
     align-self: center;
     grid-column: 2/-1;
+}
+.transparent-block {
+    width: 100%;
+    height: auto;
+    grid-column: 1/6;
+    background-color: #f6f6f63f;
 }
 
 
