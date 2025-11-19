@@ -14,6 +14,10 @@
     font-family: OpenSans-SemiBold;
     src: url(fonts/Open_Sans/static/OpenSans-SemiBold.ttf);
 }
+@font-face {
+    font-family: OpenSans-Italic;
+    src: url(fonts/Open_Sans/static/OpenSans-Italic.ttf);
+}
 
 *,
 *:before,
@@ -29,6 +33,7 @@
     --font-bold: OpenSans-Bold, sans-serif;
     --font-semibold: OpenSans-SemiBold, sans-serif;
     --font-black: Lato-Black, sans-serif;
+    --font-italic: OpenSans-Italic, sans-serif;
     /*Colors*/
     --Black: #000;
     --DarkGrey: #232323;
@@ -191,6 +196,56 @@ ul {
 .featured__img {
     max-width: 140px;
     height: auto;
+}
+
+
+/*Blog Post Styles*/
+.nav--crumbs a {
+    color: var(--Mid-LightGrey);
+}
+.nav--crumbs {
+    margin-bottom: 3rem;
+}
+.crumb {
+    display: inline-block;
+}
+.carrot a::after {
+    content: " > ";
+    display: inline-block;
+    color: var(--Mid-LightGrey);
+    padding-left: 0.25rem;
+}
+.blog__post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 75rem;
+    margin: 0 auto;
+    align-items: center;
+}
+.blog__img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+.blog__title {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    margin-bottom: 0.4rem;
+}
+.blog__contents {
+    padding: 4rem;
+}
+.date-author {
+    font-family: var(--font-italic);
+    color: var(--Mid-LightGrey);
+    display: inline-block;
+    margin: 0 1rem 0.5rem 0;
+    font-size: 0.8rem;
+}
+.blog__description {
+    margin-bottom: 2rem;
+    color: var(--MidGrey);
+    line-height: 1.5rem;
 }
 
 
