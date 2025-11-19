@@ -178,6 +178,7 @@ ul {
     font-size: 2.5rem;
 }
 
+
 /*Featured Styles*/
 .featured__background {
     background-color: var(--LightGrey);
@@ -196,6 +197,19 @@ ul {
 .featured__img {
     max-width: 140px;
     height: auto;
+}
+.featured-product__title {
+    color: var(--LightestGrey);
+    font-family: var(--font-bold);
+    margin-bottom: 0.75rem;
+}
+.hero__img, .product__contents{
+    grid-row: 1/2;
+}
+.product__contents {
+    text-align: left;
+    align-self: center;
+    grid-column: 2/-1;
 }
 
 
