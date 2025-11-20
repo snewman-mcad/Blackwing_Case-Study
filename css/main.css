@@ -426,6 +426,21 @@ footer {
 
 
 /*Components*/
+.component__title {
+    background-color: var(--DarkGrey);
+    color: var(--LightestGrey);
+    padding: 0.5rem;
+    position: sticky;
+    top: 0;
+    margin-top: 2rem;
+}
+.component__name {
+    background-color: var(--LightGrey);
+    margin-bottom: 0;
+    padding: 0.5rem;
+    position: sticky;
+    top: 2.55rem;
+}
 .component__img {
     border: 1px solid var(--DarkGrey);
     overflow-x: auto;
