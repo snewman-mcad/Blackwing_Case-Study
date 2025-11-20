@@ -49,7 +49,8 @@ img {
     display: block;
 }
 .main-area {
-    margin: 1rem;
+    margin: 0 1rem 0 16rem;
+    padding-top: 1rem;
 }
 
 /*Typography Defaults*/
@@ -62,6 +63,7 @@ h1 {
     text-transform: uppercase;
     color: var(--Black);
     font-size: 1.7rem;
+    margin: 0;
 }
 h2 {
     font-family: var(--font-bold);
@@ -101,14 +103,15 @@ ul {
 
 
 /*Component Nav Bar*/
-.flex {
-    display: flex;
-}
 .component__nav {
     background-color: var(--LightGrey);
+    position: absolute;
+    top: 0;
+    height: 100%;
     width: 15rem;
     padding: 1rem;
 }
+
 
 /*Header Styles*/
 .logo {
