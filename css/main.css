@@ -104,12 +104,26 @@ ul {
 
 /*Component Nav Bar*/
 .component__nav {
-    background-color: var(--LightGrey);
-    position: absolute;
+    background-color: var(--DarkGrey);
+    position: fixed;
     top: 0;
     height: 100%;
     width: 15rem;
     padding: 1rem;
+}
+.component__nav h1 {
+    color: var(--LightestGrey);
+}
+.component__nav a {
+    color: var(--Mid-LightGrey);
+}
+.nav__header {
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+.nav__header a {
+    color: var(--LightestGrey);
 }
 
 
