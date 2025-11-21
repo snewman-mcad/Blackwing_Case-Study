@@ -187,9 +187,11 @@ ul {
     grid-row: 1/2;
 }
 .hero__img {
-    width: 100%;
-    height: auto;
     grid-column: 1/6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
 }
 .hero__contents {
     color: var(--DarkGrey);
@@ -212,17 +214,22 @@ ul {
     .hero-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        height: 500px;
     }
     .hero__img, .hero__contents, .transparent-block--dark {
-        grid-row: 1/2;
+        grid-row: 1/-1;
+        grid-column: 1/-1;
     }
     .hero__img {
-        width: 100%;
-        height: auto;
         grid-column: 1/4;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
     .hero__contents {
         display: grid;
+        grid-template-columns: 1fr 1fr 8rem;
+        grid-template-rows: 1fr 1fr 3rem;
         color: var(--LightestGrey);
         text-align: left;
         align-self: end;
@@ -502,7 +509,8 @@ footer {
     }
     .hero__contents button {
         grid-column: 3/4;
-        text-align: right;
+        grid-row: 3/4;
+        text-align: center;
     }
 }
 
