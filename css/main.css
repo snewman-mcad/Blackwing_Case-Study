@@ -247,7 +247,22 @@ ul {
     grid-column: 1/6;
     background-color: #f6f6f63f;
 }
-
+/*Small-Medium Devices*/
+@media screen and (max-width: 992px) {
+    .featured {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        max-width: 650px;
+        padding: 2rem;
+    }
+    .featured__img {
+        min-width: 20%;
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+    }
+}
 
 /*Blog Post Styles*/
 .nav--crumbs a {
