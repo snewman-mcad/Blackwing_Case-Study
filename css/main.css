@@ -177,6 +177,29 @@ ul {
 .offer-area p {
     margin: 0;
 }
+/*Large Devices*/
+@media screen and (min-width: 992px){
+    .main-header--small {
+        display: none;
+    }
+}
+/*Small-Medium Devices*/
+@media screen and (max-width: 992px) {
+    .main-header, .sub-header {
+        display: none;
+    }
+    .logo--small{
+        font-size: 1rem;
+    }
+    .logo--small .superscript {
+        display: none;
+    }
+    .main-header--small {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+}
 
 
 /*Hero Section*/
