@@ -396,7 +396,7 @@ ul {
     margin-bottom: 0.4rem;
 }
 .blog__contents {
-    padding: 4rem;
+    padding: 3rem;
 }
 .date-author {
     font-family: var(--font-italic);
@@ -409,6 +409,24 @@ ul {
     margin-bottom: 2rem;
     color: var(--MidGrey);
     line-height: 1.5rem;
+}
+/*Medium and Small Screens*/
+@media screen and (max-width: 766px) {
+    .blog__post {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        align-items: center;
+        place-items: center;
+    }
+    .blog__img {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    .blog__contents {
+        padding: 1rem 3rem;
+    }
 }
 
 
