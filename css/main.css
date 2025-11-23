@@ -111,6 +111,7 @@ ul {
 }
 .component__nav h1 {
     color: var(--LightestGrey);
+    margin-left: 1rem;
 }
 .component__nav {
     height: 100%;
@@ -122,14 +123,15 @@ ul {
     background-color: var(--DarkGrey);
     overflow-x: hidden;
     transition: 0.5s;
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 0;
 }
 .component__nav a {
     text-decoration: none;
     color: var(--Mid-LightGrey);
     display: block;
     transition: 0.3s;
-    }
+    margin-left: 1rem;
+}
 .component__nav .closebtn {
     position: absolute;
     top: 10px;
@@ -138,7 +140,7 @@ ul {
     margin-left: 50px;
 }
 .openbtn {
-    margin-right: 1.5rem;
+    margin-right: 1rem;
 }
 #main-area {
   transition: margin-right .5s;
