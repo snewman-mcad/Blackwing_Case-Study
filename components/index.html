@@ -8,9 +8,10 @@
         <script src="https://kit.fontawesome.com/d16fbd348e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <nav class="component__nav">
+        <nav class="component__nav" id="side-nav">
             <h1>Blackwing<sup class="superscript">&copy;</sup></h1>
             <ul>
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
                 <li class="nav__header"><a href="#!">Typography Defaults</a></li>
                 <li><a href="#!">Body</a></li>
                 <li><a href="#!">Headings (h1, h2, h3, etc.)</a></li>
@@ -42,9 +43,11 @@
             </ul>
         </nav>
 
-        <div class="main-area">
-            <h1>Web Components</h1>
-
+        <div id="main-area">
+            <div class="component__header">
+                <h1>Web Components</h1>
+                <span class="openbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            </div>
             <h2 class="component__title">Typography Defaults</h2>
 
             <article class="component">
@@ -504,5 +507,16 @@
                 </div>
             </article>
         </div>
+        <script>
+        function openNav() {
+        document.getElementById("side-nav").style.width = "250px";
+        document.getElementById("main-area").style.marginRight = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("side-nav").style.width = "0";
+        document.getElementById("main-area").style.marginRight= "0";
+        }
+        </script>
     </body>       
 </html>
