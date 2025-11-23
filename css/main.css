@@ -640,7 +640,7 @@ footer {
 .component__name {
     background-color: var(--LightGrey);
     margin-bottom: 0;
-    padding: 0.5rem;
+    padding: 0.5rem 0 0.5rem 1rem;
     position: sticky;
     top: 2.55rem;
 }
