@@ -3,8 +3,64 @@
     <head>
         <meta charset="UTF-8">
         <title>Home | Blackwing</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="https://kit.fontawesome.com/d16fbd348e.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <h1>Home Page Goes Here Later</h1>
+        <header class="header">
+            <div class="main-header">
+                <h1 class="logo">Blackwing<sup class="superscript">&copy;</sup></h1>
+                <div class="search">
+                    <input class="search-bar" type="text" placeholder="Search entire store here...">
+                    <i class="fa-solid fa-magnifying-glass search-bar__mag-glass"></i>
+                </div>
+                <nav class="main-header-nav">
+                    <ul class="header-nav-list">
+                        <li><a href="#!">Account</a></li>
+                        <li><a href="#!">Contact Us</a></li>
+                        <li><a href="#!"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="sub-header">
+                <nav class="main-nav">
+                    <ul class="main-nav-list">
+                        <li><a href="#!">About</a></li>
+                        <li><a href="#!">Pencils</a></li>
+                        <li><a href="#!">Paper</a></li>
+                        <li><a href="#!">Accessories</a></li>
+                        <li><a href="#!">Gifts</a></li>
+                        <li><a href="#!">Custom</a></li>
+                        <li><a href="#!">Subscribers</a></li>
+                        <li><a href="#!">Retailers</a></li>
+                        <li><a href="#!">Stories</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="offer-area">
+                <p>Free U.S. Shipping on orders of $75 or more.</p>
+            </div>
+            <div class="main-header--small">
+                <div>
+                    <a href="#!"><i class="fa-solid fa-bars"></i></a>
+                    <a href="#!"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+                <h1 class="logo logo--small">Blackwing<sup class="superscript">&copy;</sup></h1>
+                <a href="#!"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+        </header>
+        <main>
+            <div class="hero-grid">
+                <img class="hero__img" src="components/img/PencilsVol21.webp" alt="blackwing pencils volume 21">
+                <div class="transparent-block--dark"></div>
+                <div class="hero__contents">
+                    <h2 class="h2-home hero-heading">Blackwing Vol. 21 Pencils</h2>
+                    <p class="hero__description--large">Tribute to woodworking. Our first ever square pencil made with special finger joint slats.</p>
+                    <p class="hero__description--medium">Tribute to woodworking. Our first ever square pencil.</p>
+                    <button class="button button--hero" type="button">Shop Now</button>
+                </div>
+            </div>
+        </main>
     </body>       
 </html>
