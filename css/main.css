@@ -368,6 +368,10 @@ ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.grid-2row {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
 /*Small-Medium Devices*/
 @media screen and (max-width: 992px) {
     .featured {
