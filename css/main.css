@@ -347,6 +347,9 @@ ul {
     align-self: center;
     grid-column: 2/-1;
 }
+.product__description {
+    color: var(--LightestGrey);
+}
 .transparent-block {
     width: 100%;
     height: auto;
