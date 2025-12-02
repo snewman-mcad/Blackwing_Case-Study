@@ -364,6 +364,10 @@ ul {
     grid-column: 1/6;
     background-color: #f6f6f63f;
 }
+.grid-2column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 /*Small-Medium Devices*/
 @media screen and (max-width: 992px) {
     .featured {
