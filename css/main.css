@@ -329,6 +329,12 @@ ul {
     padding: 2rem;
     margin: 0 auto;
 }
+.featured-single {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 0 2rem 0;
+}
 .featured--reverse {
     flex-direction: row-reverse;
 }
@@ -341,6 +347,17 @@ ul {
 .featured__img {
     max-width: 140px;
     height: auto;
+}
+.featured-single__img {
+    width: 50%;
+    height: auto;
+    max-height: 30rem;
+    object-fit: contain;
+    object-position: center;
+}
+.featured-single__img--long {
+    width: 60%;
+    object-fit: cover;
 }
 .featured-product__title {
     color: var(--LightestGrey);
