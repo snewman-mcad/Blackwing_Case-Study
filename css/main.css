@@ -389,7 +389,12 @@ ul {
     grid-column: 1/6;
     background-color: #f6f6f63f;
 }
-.grid-2column {
+.feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 500px;
+    }
+.grid-2column, .grid-2x2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -444,6 +449,27 @@ ul {
         height: 100%;
         object-fit: cover;
         object-position: right;
+    }
+    .product--center-cover {
+        width: 100%;
+        max-height: 20rem;
+        object-fit: cover;
+        object-position: center;
+    }
+    .product--center-full-cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-height: 500px;
+    }
+    .grid-2column {
+        display: grid;
+        grid-template-columns: 1fr;
     }
     .transparent-block {
         width: 100%;
