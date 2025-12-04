@@ -389,6 +389,9 @@ ul {
     grid-column: 1/6;
     background-color: #f6f6f63f;
 }
+.transparent-block--medium-opaque {
+    background-color: #f6f6f684;
+}
 .feature-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
